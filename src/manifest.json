@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "baapl",
+  "version": "1.0.0",
+  "description": "Transform google calendar",
+  "icons": {
+    "48": "main.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://calendar.google.com/*"],
+      "js": ["content/main.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/main.html"
+  }
+}
